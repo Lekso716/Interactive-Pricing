@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.main{
+    
+    width: 100%;
+    background-color:white;
+    background-image: url("interactive-pricing-component-main/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    padding: 89px 24px 0px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card{
+    width:327px;
+    height: 478px;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.text1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #293356;
+}
+.text2{
+    margin-top: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    color: #848EAD;
+    text-align: center;
+    width: 187px;
+}
+header{
+    background-image: url("interactive-pricing-component-main/images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 312px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #848EAD;
+    margin-top: 34px;
+}
+.slider2{
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 279px;
+    height: 8px;
+    margin-top: 41px;
+    background:white;
+    outline: none;
+    /* opacity: 1.7; */
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+    background-color: #ECF0FB;  
+
+}
+.slider2::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width:40px;
+    height: 40px;
+    background: #10D8C4;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    border-radius: 50%;
+    z-index: 2;
+    background-image: url(interactive-pricing-component-main/images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.slider-box{
+    position: relative;
+    width: 279px;
+}
+.slider-thumb{
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    background-color: #A4F3EB;
+    border-radius: 5px; 
+    top: 41px;
+
+}
+.price-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    align-items: center;
+}
+.price{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+.time{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+    margin-left: 10px;
+}
+.billing-box{
+    display: flex;
+    width: 272px;
+    height: 22px;
+    margin-top: 34px;
+    
+    align-items: center;
+
+}
+
+.toggle {
+    position : relative ;
+    display : flex;
+    width : 43px;
+    height : 22px;
+    background-color: #CFD8EF;
+    border-radius: 30px;
+    cursor: pointer;
+
+    
+}
+       
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color:white;
+    top: 4px;
+    left: 4px;
+    transition:  all 0.5s;
+}
+       
+/* Toggle text */
+       
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 24px;
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: #CFD8EF;
+}
+       
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
+.text7{
+    display: none;
+}
+.text5{
+    margin-left: 55px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+    width: 75px;
+    height: 16px;
+}
+.text4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+    margin-right: 12px;
+}
+.box1{
+    background-color: #FEEDE8;
+    border-radius: 9.5px;
+    margin-left: 5.5px;
+    width: 41px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text6{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FF8D68;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ECF0FB;
+    margin-top: 38px;
+}
+
+.privilegies-box{
+    margin-top:34px;
+}
+.privilegies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: auto;
+}
+.text8{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #848EAD;
+    margin-left:16px;
+    text-align: center;
+
+
+}
+.img1{
+    width: 9px;
+    height: 9px;
+}
+.text9{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+    cursor: pointer;
+}
+.start{
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #293356;
+    border-radius: 20.5px;
+    width: 170px;
+    height: 41px;
+}
+
+
+ 
+@media screen and (min-width: 1440px){
+    .card{
+        width: 540px;
+        padding: 40px 47px 0px 47px;
+    }
+    .text1{
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        width: 400px;
+    }
+    .text2{
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        width: 367px;
+    }
+    .text3{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2px;
+        
+    }
+    .price{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .time{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        width: 61px;
+        height: 22px;
+        text-align: left;
+    }
+    .top-box{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 446px;
+        align-items: center;
+        padding-bottom: 123px;
+        justify-content: space-between;
+    }
+    .slider2{
+        width: 444px;
+        
+
+    }
+    .slider-thumb{
+       width: 50%;
+    }
+    .slider-box{
+        position: absolute;
+        top: 107px;
+        left: 0px;
+        width: 444px;
+    }
+    .text7{
+        display: block;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #FF8D68;
+        margin-left: 2px;
+    }
+    .box1{
+        width: auto;
+        padding: 2px 6px 2px 6px;
+    }
+    .bot-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .privilegies{
+        justify-content: flex-start;
+    }
+    .start:hover .text9{
+        color:white;
+    }
+    
+    .toggle:hover {
+        background-color: #7AEADF;
+    }
+    .main{
+        background-size: 100%;
+    }
+    
+}

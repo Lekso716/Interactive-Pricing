@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+            
+            <link rel="icon" type="image/png" sizes="32x32" href="interactive-pricing-component-main/images/favicon-32x32.png">
+            <title>Frontend Mentor | Interactive pricing component</title>
+            <link rel="stylesheet" href="./style.css">
+            <script src="./script.js" defer></script>
+
+        </head>
+        <body>
+            <div class="main">
+                <header>
+                    <h1 class="text1">Simple, traffic-based pricing</h1>
+                    <h4 class="text2">Sign-up for our 30-day trial. No credit card required. </h4>
+                </header>
+                <div class="card">
+                    <div class="top-box">
+                        <p class="text3">100K PAGEVIEWS</p>
+                        <div class="slider-box">
+                            <input type="range" min="0" max="32" value="16" step="4" class="slider2" id="myRange">
+                            <div class="slider-thumb"></div>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">$16.00</p> 
+                            <p class="time">/ month</p>
+                        </div> 
+                    </div>
+                    <div class="billing-box">
+                        <p class="text4">Monthly Billing</p>
+                        <input type="checkbox" id="switch" value="false"
+                            class="checkbox" />
+                        <label for="switch" class="toggle">
+                        <div class="box2">
+                            <p class="text5">Yearly Billing</p>
+                            <div class="box1">
+                                <p class="text6">-25%</p>
+                                <p class="text7">discount</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="bot-box">
+                    <div class="privilegies-box">
+                        <div class="privilegies">
+                            <img class="img1" src="interactive-pricing-component-main/images/icon-check.svg"/>
+                            <p class="text8">Unlimited websites</p>
+                        </div>
+                        <div class="privilegies">
+                            <img class="img1" src="interactive-pricing-component-main/images/icon-check.svg"/>
+                            <p class="text8">100% data ownership </p>
+                        </div>
+                        <div class="privilegies">
+                            <img class="img1" src="interactive-pricing-component-main/images/icon-check.svg"/>
+                            <p class="text8">Email reports</p>
+                        </div>
+                    </div>
+                    <div class="start">
+                        <p class="text9">Start my trial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+</html>
